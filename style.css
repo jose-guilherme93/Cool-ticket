@@ -5,19 +5,61 @@
 }
 
 body {
-    
+    width: 100vw;
+    height: 100vh;
+    background: url(assets/Desktop.png) no-repeat ;
     display: grid;
     place-content: center;
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased; 
+    -webkit-font-smoothing: antialiased;
+    background-color: black;
+    position: relative;
+    
 }
 
-main {
-    width: 100vw;
-    height: 100vh;
-    background: url(assets/background.svg) no-repeat center/cover;
+main::before {
+    content: "";
+    left: 147px;
+    bottom: 510px;
     
-    min-height: 50.75rem;
+    background-image: url(assets/faixa.png);
+    position: absolute;
+    z-index: 10;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    height: 158px;
+    
+    margin: auto;
+}
+main::after {
+    content: "";
+    left: 139px;
+    bottom: 506px;
+    z-index: 1;
+    background-image: url(assets/quebra.png);
+    position: absolute;
+    z-index: 6;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    height: 8px;
+    
+    margin: auto;
+}
+
+
+main {
+    
+    position: relative;
+    top: 10rem ;
+    bottom: 10rem;
+    width: 358px;
+    border-radius: .5rem;
+    
+    background: url(assets/background.svg) no-repeat center;
+    
+    height: 540px;
 }
 
 h3, p {
@@ -61,6 +103,8 @@ a {
     
 }
 
+
+
 .imagesSocialMedia {
     text-align: center;
 }
@@ -79,3 +123,4 @@ a {
 .rounded * {
     border-radius: 8px;
 }
+
