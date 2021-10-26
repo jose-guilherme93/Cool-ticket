@@ -93,15 +93,17 @@ a {
 } 
 
 .avatar {
-    width: 10rem;
-    margin: 3.5rem auto 0;
+    width: 16rem;
+    height: 12rem;
+    
 }
 
 .avatar > img {
     width: 10rem;
-    
-    object-fit: contain;
+    height: 11.5rem;
+    object-fit: cover;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    
     
 }
 .avatar span {
