@@ -40,6 +40,9 @@ section > h1 {
     width: 34rem;
     color: #eee;
     margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    
     
 }
 
@@ -54,15 +57,12 @@ section > h1 {
     border-radius: 4px;
     outline: none;
     opacity: 2px;
-    
-}
-.input-text {
     background: transparent;
-    
 }
+
 .input-text[type=text] {
     color: white;
-    font-family: 'Roboto' sans-serif;
+    
     font-size: 2rem;
     padding-left: 1rem;
     border-width: 2px;
@@ -70,22 +70,21 @@ section > h1 {
     border-style: solid;
    
     border-image: linear-gradient(104.3deg, rgb(255, 0, 142) 0.48%, rgb(255, 205, 30) 100%) 1;
-    border-radius: 3px;
+    border-radius: 3rem;
 }
 .button {
-    width: 11rem;
-    height: 2rem;
+    width: 13rem;
+    height: 3rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(104.3deg, rgb(255, 0, 142) 0.48%, rgb(255, 205, 30) 100%);
     color: #eee;
-    font-size: 1rem;
+    font-size: 1.6rem;
     
     
     border-radius: .2rem;
     outline: none;
     border: none;
     cursor: pointer;
-    
-
+    transition: green;
 }
 
 .inputs {
@@ -107,6 +106,23 @@ footer > p {
 }
 @media (max-width: 500px) {
     .header {
-        margin-left: 1rem;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    main {
+        width: fit-content;
+    }
+    .input-text {
+        max-width: 250px;
+    }
+    .input-button {
+        max-width: 7rem;
+    }
+    h1 {
+        text-align: center;
     }
 }
