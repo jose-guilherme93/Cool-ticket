@@ -5,60 +5,67 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    
     width: 100vw;
     height: 100vh;
-    background: url(assets/Desktop.png) no-repeat ;
-    display: grid;
-    place-content: center;
+    background: url(assets/Desktop.png) no-repeat center/cover;
+    
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: black;
     position: relative;
     
 }
+.header {
+    background: url(assets/Logo\ DoWhile\ -\ 2021.png) no-repeat ;
+    
+    position: absolute;
+    margin-left: 10rem;
+    top: 3rem;
+    
+}
 
 main::before {
     content: "";
-    left: 147px;
+    left: center;
     bottom: 510px;
     
     background-image: url(assets/faixa.png);
     position: absolute;
     z-index: 10;
     width: 64px;
-    display: flex;
-    justify-content: center;
+    
     height: 158px;
     
-    margin: auto;
+    
 }
 main::after {
     content: "";
-    left: 139px;
+    
     bottom: 506px;
     z-index: 1;
     background-image: url(assets/quebra.png);
     position: absolute;
     z-index: 6;
     width: 80px;
-    display: flex;
-    justify-content: center;
+    
     height: 8px;
     
-    margin: auto;
 }
 
 
 main {
-    
+    display: flex;
     position: relative;
-    top: 10rem ;
-    bottom: 10rem;
-    width: 358px;
+    justify-content: center;
+    align-items: center;
+    top: 8.75rem;
+    width: 100%;
     border-radius: .5rem;
     margin-bottom: 3.7rem;
     background: url(assets/background.svg) no-repeat center;
-    
     height: 540px;
 }
 
@@ -102,8 +109,6 @@ a {
     z-index: 2;
 }
 
-
-
 .imagesSocialMedia {
     text-align: center;
 }
@@ -113,6 +118,11 @@ a {
     margin-right: auto;
     max-width: 250px;
     text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagesSocialMedia {

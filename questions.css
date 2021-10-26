@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(assets/Desktop.png) no-repeat center/cover ;
+    background-color: rgb(26, 25, 25);
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: url(assets/Logo\ DoWhile\ -\ 2021.png) no-repeat;
+    height: 1.5rem;
+   position: relative;
+   margin-left: 10rem;
+   top: 3rem;
+   
+    
+}
+    
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    height: 89vh;
+    
+
+}
+section > h1 {
+    
+    
+    width: 34rem;
+    color: #eee;
+    margin-bottom: 1.5rem;
+    
+}
+
+.input-text {
+    display: flex;
+    
+
+    width: 34rem;
+    height: 3rem;
+    
+    /* border: solid orange 1px; */
+    border-radius: 4px;
+    outline: none;
+    opacity: 2px;
+    
+}
+.input-text {
+    background: transparent;
+    
+}
+.input-text[type=text] {
+    color: white;
+    font-family: 'Roboto' sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+    border-width: 2px;
+    
+    border-style: solid;
+   
+    border-image: linear-gradient(104.3deg, rgb(255, 0, 142) 0.48%, rgb(255, 205, 30) 100%) 1;
+    border-radius: 3px;
+}
+.button {
+    width: 11rem;
+    height: 2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(104.3deg, rgb(255, 0, 142) 0.48%, rgb(255, 205, 30) 100%);
+    color: #eee;
+    font-size: 1rem;
+    
+    font: bold;
+    border-radius: .2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    top:10rem;
+}
+
+footer > p {
+
+    color: #444;
+}
+@media (max-width: 500px) {
+    .header {
+        margin-left: 1rem;
+    }
+}
